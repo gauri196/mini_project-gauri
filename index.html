@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civitas | Home</title>
+    <meta name="description"
+        content="Educate yourself on civic duties, government schemes, and community participation.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- 1. Floating Mesh Background (Added for Wow Factor) -->
+    <div class="mesh-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav id="app-navigation">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <i data-lucide="shield-check"></i>
+                <span>Civitas</span>
+            </a>
+
+            <button class="mobile-toggle" onclick="toggleMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="learning.html" class="nav-link">Learning</a></li>
+                <li><a href="schemes.html" class="nav-link">Schemes</a></li>
+                <li><a href="participation.html" class="nav-link">Participation</a></li>
+                <li><a href="reports.html" class="nav-link">Reports</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="container">
+        <!-- 1. Hero Section -->
+        <div class="hero-section reveal reveal-up"
+            style="display: flex; align-items: center; justify-content: space-between; padding: var(--spacing-2xl) 0; gap: var(--spacing-2xl);">
+            <div style="flex: 1; max-width: 650px;">
+                <h1 class="section-title"
+                    style="font-size: 3.5rem; margin-bottom: var(--spacing-md); line-height: 1.1;">Good Morning, <span
+                        style="background: linear-gradient(120deg, #472825, #D3AB80); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Citizen</span>
+                </h1>
+                <p class="section-description" style="font-size: 1.25rem; margin-bottom: var(--spacing-lg);">Civitas is
+                    your gateway to active citizenship. We bridge the gap between residents and the services that power
+                    our community. Stay informed, get supported, and make an impact.</p>
+
+                <div class="search-container" style="margin: 0; max-width: 100%;">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" class="search-input"
+                        placeholder="Search for schemes, services, or civic topics...">
+                </div>
+            </div>
+            <div
+                style="flex: 0 0 450px; display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md); padding-left: var(--spacing-xl); border-left: 1px solid var(--border-color);">
+                <div class="stat-card reveal reveal-up" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--accent-color);">12k+</h4>
+                    <p style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-tertiary);">Active
+                        Citizens</p>
+                </div>
+                <div class="stat-card reveal reveal-up" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--accent-color);">45</h4>
+                    <p style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-tertiary);">Open Schemes
+                    </p>
+                </div>
+                <div class="stat-card reveal reveal-up" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--accent-color);">98%</h4>
+                    <p style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-tertiary);">Response Rate
+                    </p>
+                </div>
+                <div class="stat-card reveal reveal-up" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--accent-color);">15</h4>
+                    <p style="font-size: 0.8rem; text-transform: uppercase; color: var(--text-tertiary);">Live Events
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div
+            style="display: grid; grid-template-columns: 3fr 1fr; gap: var(--spacing-2xl); margin-top: var(--spacing-xl);">
+            <!-- 2. Main Feed -->
+            <div>
+                <h2 class="reveal reveal-up"
+                    style="font-size: 1.75rem; margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--border-color); display: inline-block;">
+                    Primary Modules</h2>
+                <div class="stagger-group"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-lg);">
+                    <a href="learning.html" class="card reveal reveal-up">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <div class="card-icon"><i data-lucide="book-open"></i></div>
+                            <h3 class="card-title" style="margin: 0;">Civic Learning</h3>
+                        </div>
+                        <p class="card-text">Master the fundamentals of governance. From constitutional rights to local
+                            council roles, build the knowledge needed to lead.</p>
+                        <div style="display: flex; gap: 8px; margin-top: auto;">
+                            <span class="tag">5 Pathsways</span>
+                            <span class="tag">Certificate</span>
+                        </div>
+                    </a>
+
+                    <a href="schemes.html" class="card reveal reveal-up">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <div class="card-icon"><i data-lucide="layout-grid"></i></div>
+                            <h3 class="card-title" style="margin: 0;">Schemes Explorer</h3>
+                        </div>
+                        <p class="card-text">Access thousands of dollars in benefits. Our smart eligibility engine
+                            matches you with Healthcare, Housing, and Education grants.</p>
+                        <div style="display: flex; gap: 8px; margin-top: auto;">
+                            <span class="tag">Updated Daily</span>
+                        </div>
+                    </a>
+
+                    <a href="participation.html" class="card reveal reveal-up">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <div class="card-icon"><i data-lucide="users"></i></div>
+                            <h3 class="card-title" style="margin: 0;">Participation Hub</h3>
+                        </div>
+                        <p class="card-text">Join the conversation. Register for town halls, vote on local budgets, and
+                            volunteer for city-shaping committees.</p>
+                        <div style="display: flex; gap: 8px; margin-top: auto;">
+                            <span class="tag">3 Live Meetings</span>
+                        </div>
+                    </a>
+
+                    <a href="reports.html" class="card reveal reveal-up">
+                        <div style="display: flex; align-items: center; gap: var(--spacing-md);">
+                            <div class="card-icon"><i data-lucide="alert-circle"></i></div>
+                            <h3 class="card-title" style="margin: 0;">Issue Reporting</h3>
+                        </div>
+                        <p class="card-text">See a problem? Solve it. Report street lights, waste issues, or safety
+                            concerns directly to the relevant authorities.</p>
+                        <div style="display: flex; gap: 8px; margin-top: auto;">
+                            <span class="tag">Direct Escalation</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Featured Section -->
+                <div class="reveal reveal-up"
+                    style="margin-top: var(--spacing-2xl); background: var(--surface-color); padding: var(--spacing-xl); border-radius: var(--radius-lg); display: flex; align-items: center; gap: var(--spacing-xl); border: 1px solid var(--border-color); position: relative; overflow: hidden;">
+                    <div style="flex: 1;">
+                        <span class="tag"
+                            style="background: var(--text-primary); color: white; margin-bottom: 12px; display: inline-block;">URGENT
+                            ANNOUNCEMENT</span>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 8px;">New Digital Literacy Program</h3>
+                        <p style="color: var(--text-secondary); max-width: 500px;">We're launching a city-wide
+                            initiative to bridge the digital divide. Enrollment for senior citizens starts this Monday.
+                            1-on-1 coaching available.</p>
+                        <button class="btn btn-primary" style="margin-top: var(--spacing-md);">Secure Your Slot</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Sidebar (Eliminates the Gap) -->
+            <aside class="reveal reveal-up">
+                <div class="card"
+                    style="background: var(--bg-color); border-style: dashed; margin-bottom: var(--spacing-lg);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                        <i data-lucide="trending-up" style="width: 18px;"></i> Trending Topics
+                    </h3>
+                    <ul style="display: flex; flex-direction: column; gap: 12px;">
+                        <li style="font-size: 0.9rem; color: var(--text-secondary); cursor: pointer; transition: 0.2s;"
+                            onmouseover="this.style.color='var(--accent-color)'"># NewParkProject</li>
+                        <li style="font-size: 0.9rem; color: var(--text-secondary); cursor: pointer; transition: 0.2s;"
+                            onmouseover="this.style.color='var(--accent-color)'"># LocalElection2026</li>
+                        <li style="font-size: 0.9rem; color: var(--text-secondary); cursor: pointer; transition: 0.2s;"
+                            onmouseover="this.style.color='var(--accent-color)'"># YouthVolunteers</li>
+                        <li style="font-size: 0.9rem; color: var(--text-secondary); cursor: pointer; transition: 0.2s;"
+                            onmouseover="this.style.color='var(--accent-color)'"># RecyclingGrant</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-bottom: var(--spacing-lg);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Active Poll</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Should we extend
+                        the weekend market hours until 9:00 PM?</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <button class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem;">Yes,
+                            Absolutely</button>
+                        <button class="btn btn-outline" style="font-size: 0.8rem; padding: 0.5rem;">No, keep it as
+                            is</button>
+                    </div>
+                </div>
+
+                <div class="card" style="background: var(--accent-color); color: var(--bg-color);">
+                    <h3 style="font-size: 1rem; margin-bottom: 8px;">Need Help?</h3>
+                    <p style="font-size: 0.8rem; opacity: 0.8; margin-bottom: var(--spacing-md);">Our Spark AI is ready
+                        to assist you with any questions.</p>
+                    <button class="btn btn-primary"
+                        style="background: var(--bg-color); color: var(--accent-color); width: 100%;"
+                        onclick="Spark.toggle()">Start Chat</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer style="padding: var(--spacing-2xl) 0; border-top: 1px solid var(--border-color); margin-top: auto;">
+        <div class="container"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-md);">
+            <div>
+                <div class="logo">
+                    <i data-lucide="shield-check"></i>
+                    <span>Civitas</span>
+                </div>
+                <p style="color: var(--text-tertiary); font-size: 0.875rem; margin-top: var(--spacing-sm);">Empowering
+                    citizens through knowledge and action.</p>
+            </div>
+            <div style="display: flex; gap: var(--spacing-xl);">
+                <a href="#" style="color: var(--text-secondary); font-size: 0.875rem;">Privacy Policy</a>
+                <a href="#" style="color: var(--text-secondary); font-size: 0.875rem;">Terms of Service</a>
+                <a href="#" style="color: var(--text-secondary); font-size: 0.875rem;">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+
+</html>
